@@ -77,9 +77,7 @@ if uploaded_file:
 
         chunks = splitter.split_documents(documents)
 
-        st.write(
-            f"Text Chunks Created: {len(chunks)}"
-        )
+
 
         # Handle empty PDFs
         if len(chunks) == 0:
@@ -99,10 +97,6 @@ if uploaded_file:
             "hello world"
         )
 
-        st.success(
-            f"Embedding API Working. "
-            f"Vector Dimension: {len(test_vector)}"
-        )
 
         # Create vector store
         vector_store = FAISS.from_documents(
@@ -110,9 +104,6 @@ if uploaded_file:
             embedding=embeddings
         )
 
-        st.success(
-            "Vector Store Created Successfully"
-        )
 
         # Create Gemini model
         llm = ChatGoogleGenerativeAI(
