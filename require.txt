@@ -1,0 +1,67 @@
+# LangChain
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# OpenAI
+langchain-openai
+openai
+
+# Anthropic
+langchain-anthropic
+anthropic
+
+# Google Gemini
+langchain-google-genai
+google-generativeai
+
+# Hugging Face
+langchain-huggingface
+transformers
+huggingface-hub
+sentence-transformers
+
+# Vector Stores
+faiss-cpu
+chromadb
+
+# Document Loaders
+pypdf
+pymupdf
+unstructured
+
+# Tokenization
+tiktoken
+
+# Environment Variables
+python-dotenv
+
+# Data Science
+numpy
+pandas
+scikit-learn
+torch
+
+# Networking
+requests
+httpx
+
+# Utilities
+tqdm
+tenacity
+
+# UI
+streamlit
+
+langgraph
+langsmith
+duckduckgo-search
+beautifulsoup4
+lxml
+langchain-google-genai
+google-generativeai
+
+# Notebook
+jupyter
+ipykernel
