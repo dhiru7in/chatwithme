@@ -14,12 +14,11 @@ import tempfile
 # PAGE CONFIG
 # -----------------------------
 st.set_page_config(
-    page_title="PDF Chatbot with Gemini",
-    page_icon="📄",
+    page_title="PDF Chatbot"
     layout="centered"
 )
 
-st.title("PDF Chatbot with Gemini")
+st.title("PDF Chatbot")
 st.write("Upload a PDF and ask questions about its content.")
 
 
