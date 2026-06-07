@@ -44,9 +44,9 @@ if uploaded_file:
         )
     else:
         try:
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="gemini-embedding-001",
-        google_api_key=API_KEY
+        embeddings = GoogleGenerativeAIEmbeddings(
+            model="gemini-embedding-001",
+            google_api_key=API_KEY
     )
 
     # Test embedding API first
