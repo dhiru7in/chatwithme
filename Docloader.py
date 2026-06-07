@@ -6,7 +6,7 @@ import streamlit as st
 import tempfile
 
 
-api_key = st.secrets["AQ.Ab8RN6LofsF8EjVSPgF6e4e76ZKRuKyTeqOxskF8aLA-cmyiRg"]
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 st.set_page_config(
     page_title="PDF Chatbot with Gemini",
