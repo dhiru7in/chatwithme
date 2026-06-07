@@ -14,7 +14,7 @@ import tempfile
 # PAGE CONFIG
 # -----------------------------
 st.set_page_config(
-    page_title="PDF Chatbot"
+    page_title="PDF Chatbot",
     layout="centered"
 )
 
