@@ -43,8 +43,28 @@ if uploaded_file:
             "Try a different file or use an OCR-enabled loader."
         )
     else:
-        embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-001", google_api_key=API_KEY)
-        vector_store = FAISS.from_documents(documents=chunks, embedding=embeddings)
+        try:
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="gemini-embedding-001",
+        google_api_key=API_KEY
+    )
+
+    # Test embedding API first
+    test_embedding = embeddings.embed_query("hello")
+
+    st.success(
+        f"Embedding API works. Vector dimension: {len(test_embedding)}"
+    )
+
+    vector_store = FAISS.from_documents(
+        documents=chunks,
+        embedding=embeddings
+    )
+
+except Exception as e:
+    st.error(f"Embedding Error: {e}")
+    st.stop()
+
 
         llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0, google_api_key=API_KEY)
         question = st.text_input("Ask a question about the PDF")
