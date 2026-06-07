@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -6,7 +5,8 @@ from langchain_community.vectorstores import FAISS
 import streamlit as st
 import tempfile
 
-API_KEY = "AQ.Ab8RN6LofsF8EjVSPgF6e4e76ZKRuKyTeqOxskF8aLA-cmyiRg"
+
+api_key = st.secrets["AQ.Ab8RN6LofsF8EjVSPgF6e4e76ZKRuKyTeqOxskF8aLA-cmyiRg"]
 
 st.set_page_config(
     page_title="PDF Chatbot with Gemini",
