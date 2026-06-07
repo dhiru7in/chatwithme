@@ -6,8 +6,6 @@ from langchain_community.vectorstores import FAISS
 import streamlit as st
 import tempfile
 
-load_dotenv()
-
 API_KEY = "AQ.Ab8RN6LofsF8EjVSPgF6e4e76ZKRuKyTeqOxskF8aLA-cmyiRg"
 
 st.set_page_config(
