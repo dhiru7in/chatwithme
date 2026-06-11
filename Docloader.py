@@ -19,7 +19,7 @@ st.set_page_config(
 )
 
 st.title("PDF Chatbot")
-st.write("""Upload a PDF and ask questions about its content."""
+st.write("""Upload a PDF and ask questions about its content.\n"""
 """Document size should be less than 2MB.""")
 
 
