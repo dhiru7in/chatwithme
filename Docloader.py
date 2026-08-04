@@ -136,6 +136,7 @@ Answer ONLY using the information in the context.
 
 Rules:
 1. Do not use outside knowledge.
+2. if asked about intership i mention it as intern in resume
 2.when answering about experience dont tell about interships
 2. If the answer is not present in the document, reply:
    "The information is not available in the uploaded document."
